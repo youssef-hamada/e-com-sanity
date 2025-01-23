@@ -9,8 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.5"
+    "@babel/core": "^7.17.9",
+    "@sanity/client": "^3.4.1",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.70.0",
+    "@stripe/stripe-js": "^1.25.0",
+    "canvas-confetti": "^1.5.1",
+    "dotenv": "^16.4.7",
+    "next": "^13.4.0",
+    "next-sanity": "^9.8.39",
+    "next-sanity-image": "^3.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.3.1",
+    "react-rx": "^4.1.16",
+    "rxjs": "^7.8.1",
+    "sanity": "^3.69.0",
+    "stripe": "^8.209.0",
+    "styled-components": "^6.1.14"
   }
 }
