@@ -30,6 +30,8 @@ export const StateContext = ({ children }) => {
   const onRemove = (product) => {
     foundProduct = cartItems.find((item) => item._id === product._id);
     const newCartItems = cartItems.filter((item) => item._id !== product._id);
+
+    // the rest of logic of delete..
   };
 
   const toggleCartItemQuantity = (id, value) => {
