@@ -31,7 +31,14 @@ export const StateContext = ({ children }) => {
     foundProduct = cartItems.find((item) => item._id === product._id);
     const newCartItems = cartItems.filter((item) => item._id !== product._id);
 
-    // the rest of logic of delete..
+    setTotalPrice(
+      (prevTotalPrice) =>
+        prevTotalPrice - foundProduct.price * foundProduct.quantity
+    );
+    setTotalQuantity(
+      (prevTotalQuantity) => prevTotalQuantity - foundProduct.quantity
+    );
+    setCartItems(newCartItems);
   };
 
   const toggleCartItemQuantity = (id, value) => {
@@ -95,6 +102,7 @@ export const StateContext = ({ children }) => {
         decQty,
         onAdd,
         setShowCart,
+        onRemove,
         toggleCartItemQuantity,
       }}
     >
